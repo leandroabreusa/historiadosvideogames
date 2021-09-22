@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+      <head>
+            <title>História dos videogames</title>
+            <link rel="shortcurt icon" href="images/icon.png">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src="js/index.js"></script>
+            
+      </head>
+
+      <body> 
+            <header id="iniciodapagina2">
+              <h2 class="desktop"><a href="index.html" target="_self"><img src="images/historiadosvideogames.jpg" alt="A história dos videogames" style="width: 525px; height: 195px;"></a></h2>
+              <h2 class="tablet"><a href="index.html" target="_self"><img src="images/historiadosvideogames.jpg" alt="A história dos videogames" style="width: 397px; height: 147px;"></a></h2>
+              <h2 class="smartphone"><a href="index.html" target="_self"><img src="images/historiadosvideogames.jpg" alt="A história dos videogames" style="width: 275px; height: 101px;"></a></h2>
+              
+              <div class="data">
+                <h3><i class="material-icons" style="font-size:16px">event</i> Dias até a E3 2021</h3>
+                <p class="resultado"></p>
+              </div>
+
+            </header>
+
+            <nav>
+              <ul>
+                  <li class="itens"><a href="index.html" target="_self">Início</a></li>
+                  <li class="itens"><a class="ativo" href="historia.html" target="_self">História</a></li>
+                  <li class="itens"><a href="quiz.html" target="_self">Quiz</a></li>
+                  <li class="itens"><a href="referencias.html" target="_self">Referências</a></li>
+              </ul>
+            </nav>
+
+            <div class="backgroundprincipal">
+              <p><a href="#finaldapagina2" target="_self"><i class="material-icons" style="font-size:32px; position: relative; top: 10px;">keyboard_arrow_down</i> Final da Página</a></p>
+              
+              <header>
+                <h1>História dos videogames ao longo do tempo</h1>
+              </header>
+              
+              <section>
+                <header>
+                  <h3><i class="material-icons" style="font-size:32px; position: relative; top: 10px;">videogame_asset</i> Alguns jogos do PS4</h3>
+                </header>
+
+                <div class="slideshow">
+        
+                  <div class="slider">
+                    <div class="numerotexto">1 / 3</div>
+                    <img class="desktop" src="images/thelastofus2.png" alt="The Last of Us Part II" style="width: 600px; height: auto;">
+                    <img class="tablet" src="images/thelastofus2.png" alt="The Last of Us Part II" style="width: 400px; height: auto;">
+                    <img class="smartphone" src="images/thelastofus2.png" alt="The Last of Us Part II" style="width: 250px; height: auto;">
+                    <div class="texto">The Last of Us Part II</div>
+                  </div>
+                
+                  <div class="slider">
+                    <div class="numerotexto">2 / 3</div>
+                    <img class="desktop" src="images/godofwar.jpg" alt="God of War" style="width: 600px; height: auto;">
+                    <img class="tablet" src="images/godofwar.jpg" alt="God of War" style="width: 400px; height: auto;">
+                    <img class="smartphone" src="images/godofwar.jpg" alt="God of War" style="width: 250px; height: auto;">
+                    <div class="texto">God of War</div>
+                  </div>
+                
+                  <div class="slider">
+                    <div class="numerotexto">3 / 3</div>
+                    <img class="desktop" src="images/spiderman.jpg" alt="Spider-Man" style="width: 600px; height: auto;">
+                    <img class="tablet" src="images/spiderman.jpg" alt="Spider-Man" style="width: 400px; height: auto;">
+                    <img class="smartphone" src="images/spiderman.jpg" alt="Spider-Man" style="width: 250px; height: auto;">
+                    <div class="texto">Marvel's Spider-Man</div>
+                  </div>
+                
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  <br>
+                
+                </div>
+                
+                <div style="text-align:center">
+                  <span class="botao" onclick="currentSlide(1)"></span>
+                  <span class="botao" onclick="currentSlide(2)"></span>
+                  <span class="botao" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                  // Funções do Slider
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+
+                  function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("slider");
+                    var dots = document.getElementsByClassName("botao");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                  }
+                </script>
+
+                <p>&nbsp;</p>
+
+              </section>
+
+              <main>
+                <section>
+                  <header> 
+                    <div>
+                        <h2 style="text-align: center; text-decoration: none;">Tópicos</h2>
+                    </div>
+                    
+                  </header>
+                  
+                  <nav>
+                    <div>    
+                        <ul class="indice">
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#inicio">O início</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#videogamestv">O começo dos videogames com telas de tv</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#videogamesdomestico">O lançamento dos videogames domésticos</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#jogosdeguerra">A temática de guerra nos jogos</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#personagemgames">A protagonização de personagens virtuais</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#evolucaogames">A evolução dos jogos</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#modernizacaovideogames">A modernização dos videogames</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#geracaoatual">A geração atual de videogames</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#ranking">Ranking sobre videogames e jogos</a></li>
+                            <li><i class="material-icons" style="font-size:16px">navigate_next</i><a href="#novageracao">Nova geração dos videogames</a></li>
+                        </ul>
+                    
+                    </div>
+                  
+                  </nav> 
+
+                  <article>
+                    <div id="inicio">
+                        <header>
+                          <h2>O início</h2>
+                        </header>
+
+                        <p class="inicial">Em 1958, o físico William Higinbotham criou o jogo chamado <span style="font-weight: bold;">Tennis for Two</span>, em um aparelho chamado osciloscópio, para entreter os visitantes do laboratório conhecido como Brookhaven. Esse jogo foi o primeiro a ser mostrado ao público.</p>
+                        <figure class="desktop"><img src="images/osciloscópio.jpg" alt="Tennis for Two" style="width: 204px; height: 157px;"><figcaption style="font-weight: bold; font-size: 12px;">Tennis for Two, 1958</figcaption></figure>
+                        <figure class="tablet"><img src="images/osciloscópio.jpg" alt="Tennis for Two" style="width: 185px; height: 142px;"><figcaption style="font-weight: bold; font-size: 11px;">Tennis for Two, 1958</figcaption></figure>
+                        <figure class="smartphone"><img src="images/osciloscópio.jpg" alt="Tennis for Two" style="width: 168px; height: 129px;"><figcaption style="font-weight: bold; font-size: 10px;">Tennis for Two, 1958</figcaption></figure>
+                        <p>No ano de 1961, alguns estudantes do Instituto de Tecnologia de Massachusetts criaram o jogo chamado <span style="font-weight:bold;">Spacewar!</span>, em que duas naves espaciais atiravam torpedos contra a outra.
+                          No centro do cenário, um buraco negro precisava ser desviado para não causar dano a essas naves. Foi o primeiro jogo que influenciou e teve grande reconhecimento, de fato.</p>
+                        <figure class="desktop"><img src="images/spacewar.png" alt="Spacewar!" style="width: 232px; height: 156px;"><figcaption style="font-weight: bold; font-size: 12px;">Spacewar!, 1961</figcaption></figure>
+                        <figure class="tablet"><img src="images/spacewar.png" alt="Spacewar!" style="width: 211px; height: 142px;"><figcaption style="font-weight: bold; font-size: 11px;">Spacewar!, 1961</figcaption></figure>
+                        <figure class="smartphone"><img src="images/spacewar.png" alt="Spacewar!" style="width: 192px; height: 129px;"><figcaption style="font-weight: bold; font-size: 10px;">Spacewar!, 1961</figcaption></figure>
+                        <p>Então, percebe-se que os primórdios dos videogames circulavam apenas no ambiente universitário através dos estudantes e desenvolvedores dessas instituições de ensino.</p>
+                      </div>
+                  </article>
+
+                  <article>  
+                    <div id="videogamestv">
+                        <header>
+                          <h2>O começo dos videogames com telas de TV</h2>
+                        </header>
+
+                        <p>No ano de 1967, foi criado o primeiro jogo que utilizava o televisor. Esse jogo foi criado pelo engenheiro alemão Ralph Baer e consistia em duas raquetes que podiam ser movidas para cima e para baixo,
+                          com uma rede no meio da tela e uma bola que, ao tocar em uma das raquetes, era lançada para o lado contrário. Esse jogo teve sua variação lançada anos depois pela empresa Atari e
+                          ficou conhecido como <span style="font-weight: bold;">Pong</span>.</p>
+                        <p>A partir da década de 1970, o desenvolvimento de jogos já atingia vários setores, como os famosos fliperamas e os computadores de universidades e domésticos. Em 1970, Nolan Bushnell, com a assistência de
+                          Ted Dabney, utilizou o quarto de sua filha para a criação de uma máquina que pudesse ser conectada a uma televisão para jogar o conhecido <span style="font-weight: bold;">Spacewar!</span>. Esse videogame
+                          ficou conhecido como <span style="font-weight: bold;">Computer Space</span>.
+                        <figure class="desktop"><img src="images/computerspace.jpg" alt="Computer Space" style="width: 275px; height: 220px;"><figcaption style="font-weight: bold; font-size: 12px;">Computer Space, 1970</figcaption></figure>
+                        <figure class="tablet"><img src="images/computerspace.jpg" alt="Computer Space" style="width: 229px; height: 183px;"><figcaption style="font-weight: bold; font-size: 11px;">Computer Space, 1970</figcaption></figure>
+                        <figure class="smartphone"><img src="images/computerspace.jpg" alt="Computer Space" style="width: 190px; height: 152px;"><figcaption style="font-weight: bold; font-size: 10px;">Computer Space, 1970</figcaption></figure>
+                        <p>Em 1971, mais precisamente setembro, foi operado o primeiro jogo com moeda que foi instalado na Universidade de Stanford. Também nesse ano, a Computer Space foi comprada pela fabricante Nutting Associates, porém
+                          sem sucesso com o público. Após esse evento, os criadores Bushnell e Dabney saem dessa empresa e começam com a criação de uma empresa que revolucionou e ficou para a história dos videogames: <span style="font-weight: bold;">a Atari</span>.
+                        <p>A partir da fundação da Atari, os dois fundadores programam o jogo que ficou conhecido como <span style="font-weight: bold;">Pong</span>. No início, não despertou o interesse de grandes empresas desse ramo, então decide testar em um bar.
+                          Com isso, consegue um sucesso imenso, com a superlotação das máquinas de moedas em duas semanas. Esse jogo chegou ao Brasil anos depois, em 1977, pela fabricante Philco e foi chamado de <span style="font-weight: bold;">Telejogo</span>.
+                        <figure class="desktop"><img src="images/pong.jpg" alt="Pong" style="width: 232px; height: 131px;"><figcaption style="font-weight: bold; font-size: 12px;">Pong, 1972</figcaption></figure>
+                        <figure class="tablet"><img src="images/pong.jpg" alt="Pong" style="width: 211px; height: 119px;"><figcaption style="font-weight: bold; font-size: 11px;">Pong, 1972</figcaption></figure>
+                        <figure class="smartphone"><img src="images/pong.jpg" alt="Pong" style="width: 192px; height: 108px;"><figcaption style="font-weight: bold; font-size: 10px;">Pong, 1972</figcaption></figure>
+                    </div>
+                  </article>
+
+                  <article>  
+                    <div id="videogamesdomestico">
+                        <header>
+                          <h2>O lançamento dos videogames domésticos</h2>
+                        </header>
+
+                        <p>No ano de 1972, foi lançado o primeiro videogame doméstico que foi chamado de <span style="font-weight: bold;">Magnavox Odyssey</span>, que foi uma readaptação do console criado pelo engenheiro Ralph Baer,
+                          que possuia um hardware complexo, funcionando a base de bateria, além de não possuir som. Nos anos seguintes, foram lançadas novas versões desse console, cada uma com mais jogos que a anterior.</p>
+                        <figure class="desktop"><img src="images/magnavoxodyssey.jpg" alt="Magnavox Odyssey" style="width: 316px; height: 160px;"><figcaption style="font-weight: bold; font-size: 12px;">Magnavox Odyssey, 1972</figcaption></figure>
+                        <figure class="tablet"><img src="images/magnavoxodyssey.jpg" alt="Magnavox Odyssey" style="width: 263px; height: 133px;"><figcaption style="font-weight: bold; font-size: 11px;">Magnavox Odyssey, 1972</figcaption></figure>
+                        <figure class="smartphone"><img src="images/magnavoxodyssey.jpg" alt="Magnavox Odyssey" style="width: 219px; height: 111px;"><figcaption style="font-weight: bold; font-size: 10px;">Magnavox Odyssey, 1972</figcaption></figure>
+                        <p>Depois do lançamento do primeiro console doméstico, foi a vez do <span style="font-weight: bold">Pong</span>, em 1975, chegar às casas na forma de um console que simulava o fliperama. Em 1976, a Atari foi vendida para a Warner Communications, porém
+                          Bushnell, que era um dos fundadores, continuou como presidente da Atari.</p>
+                        <p>O primeiro console que utilizava cartuchos foi lançado no ano de 1976, com o nome de <span style="font-weight: bold;">Fairchild Channel F</span>. No total, foram lançados 26 jogos, em cartucho e numerados, para esse console e sua popularidade caiu, em 1977,
+                          com o lançamento do <span style="font-weight: bold;">Atari VCS 2600</span>, que teve 9 jogos e foi o console mais popular da época.</p>
+                        <figure class="desktop"><img src="images/fairchildchannelf.jpg" alt="Atari VCS 2600" style="width: 277px; height: 182px;"><figcaption style="font-weight: bold; font-size: 12px;">Fairchild Channel F, 1976</figcaption></figure>
+                        <figure class="tablet"><img src="images/fairchildchannelf.jpg" alt="Atari VCS 2600" style="width: 230px; height: 151px;"><figcaption style="font-weight: bold; font-size: 11px;">Fairchild Channel F, 1976</figcaption></figure>
+                        <figure class="smartphone"><img src="images/fairchildchannelf.jpg" alt="Atari VCS 2600" style="width: 192px; height: 126px;"><figcaption style="font-weight: bold; font-size: 10px;">Fairchild Channel F, 1976</figcaption></figure>
+                        
+                        <figure class="desktop"><img src="images/atari2600.jpg" alt="Atari VCS 2600" style="width:287px;height:175px;"><figcaption style="font-weight: bold; font-size: 12px;">Atari VCS 2600, 1977</figcaption></figure>
+                        <figure class="tablet"><img src="images/atari2600.jpg" alt="Atari VCS 2600" style="width:239px;height:145px;"><figcaption style="font-weight: bold; font-size: 11px;">Atari VCS 2600, 1977</figcaption></figure>
+                        <figure class="smartphone"><img src="images/atari2600.jpg" alt="Atari VCS 2600" style="width:199px;height:121px;"><figcaption style="font-weight: bold; font-size: 10px;">Atari VCS 2600, 1977</figcaption></figure>
+                        <p>Após isso, no ano de 1978, ocorreu o lançamento do fliperama chamado <span style="font-weight: bold;">Space Invaders</span>, criado pela empresa japonesa Taito. Consistia em atirar em invasores que vinham do espaço e seu efeito sonoro foi baseado no som do coração,
+                          simulando, inclusive, os momentos de adrenalina aumentando a frequência das batidas. Um ano depois, a Atari fez sua versão desse jogo para o console VCS, resultando em um sucesso de vendas.</p>
+                        <p>No ano de 1979, a empresa Atari fez o jogo que mais tem sucesso de toda a sua história e foi chamado de <span style="font-weight: bold;">Asteroids</span>. Foi nesse jogo que a função de gravar as melhores pontuações dos jogadores com suas iniciais. Após desentendimentos
+                          internos na Atari, foi fundada a empresa que é conhecida até hoje no mundo dos games chamada de <span style="font-weight: bold;">Activision</span> e é considerada a primeira desenvolvedora de jogos terceirizada.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="jogosdeguerra">
+                        <header>
+                          <h2>A temática de guerra nos jogos</h2>
+                        </header>
+
+                        <p>Também, em 1979, foi lançado o primeiro jogo em primeira pessoa e tridimensional, que ocorria em um cenário simulado de guerra e o jogador controlava um tanque para eliminar diversos alvos, chamado de <span style="font-weight: bold;">Battlezone</span>. Foi a partir desse
+                          jogo que foi firmado uma ligação entre o desenvolvimento destes e a temática de guerra.</p>
+                        <p>Isso também ocorreu devido ao período em que os jogos estavam em constante crescimento, que foi a guerra fria, e as emoções dos desenvolvedores eram passadas ao público de uma forma divertida ao meio de uma disputa entre o socialismo e o capitalismo, com grandes avanços
+                          tecnológicos na época.</p>
+                        <figure class="desktop"><img src="images/battlezone.jpg" alt="Battlezone" style="width: 250px; height: 188px;"><figcaption style="font-weight: bold; font-size: 12px;">Battlezone, 1979</figcaption></figure>
+                        <figure class="tablet"><img src="images/battlezone.jpg" alt="Battlezone" style="width: 208px; height: 156px;"><figcaption style="font-weight: bold; font-size: 11px;">Battlezone, 1979</figcaption></figure>
+                        <figure class="smartphone"><img src="images/battlezone.jpg" alt="Battlezone" style="width: 173px; height: 130px;"><figcaption style="font-weight: bold; font-size: 10px;">Battlezone, 1979</figcaption></figure>
+                        <p> Nos computadores, os jogos continuavam concentrados no ambiente universitário, sem serem comercializados em grande escala. Em razão disso, tem-se pouca informação sobre os jogos dessa época.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="personagemgames">
+                        <header>
+                          <h2>A protagonização de personagens virtuais</h2>
+                        </header>
+
+                        <p>O ano de 1980 começou com um grande lançamento, no Japão, que ficou conhecido como <span style="font-weight: bold;">Pac-Man</span>, chamado por muitos no Brasil como "Come-Come".</p>
+                        <figure class="desktop"><img src="images/pacman.jpg" alt="Pac-Man" style="width: 224px; height: 288px;"><figcaption style="font-weight: bold; font-size: 12px;">Pac-Man, 1980</figcaption></figure>
+                        <figure class="tablet"><img src="images/pacman.jpg" alt="Pac-Man" style="width: 186px; height: 240px;"><figcaption style="font-weight: bold; font-size: 11px;">Pac-Man, 1980</figcaption></figure>
+                        <figure class="smartphone"><img src="images/pacman.jpg" alt="Pac-Man" style="width: 155px; height: 200px;"><figcaption style="font-weight: bold; font-size: 10px;">Pac-Man, 1980</figcaption></figure>
+                        <p>O jogo se baseava em um personagem principal que tinha como objetivo, basicamente, comer. Com isso muitas pessoas se identificaram com esse personagem, levando ao sucesso absoluto com um público
+                          altamente diversificado, entre eles, homens, mulheres e crianças.</p>
+                        <p>Após uma grave crise de criatividade da empresa Atari e também com sua queda enorme no mercado, a empresa decretou o fim dos consoles caseiros, inclusive enterrando vários cartuchos devido ao fracasso
+                          de vendas. Em 1984, o mercado de jogos feitos para computadores superou o de consoles domésticos por causa dessa crise, devido a jogabilidade muito parecida e ligar e desligar um computador era tão fácil
+                          como um console. Com os dois computadores que fizeram sucesso, <span style="font-weight: bold;">o Commodore 64 e ZX Spectrum</span>, os jogos para PC começaram a se firmar.</p>
+                        <p>Com a extrema necessidade de criatividade no mercado, o russo Alex Pajitnov criou o jogo muito famoso chamado de <span style="font-weight: bold;">Tetris</span>.</p>
+                        <figure class="desktop"><img src="images/tetris.jpg" alt="Tetris" style="width: 310px; height: 194px;"><figcaption style="font-weight: bold; font-size: 12px;">Tetris, 1984</figcaption></figure>
+                        <figure class="tablet"><img src="images/tetris.jpg" alt="Tetris" style="width: 258px; height: 161px;"><figcaption style="font-weight: bold; font-size: 11px;">Tetris, 1984</figcaption></figure>
+                        <figure class="smartphone"><img src="images/tetris.jpg" alt="Tetris" style="width: 215px; height: 134px;"><figcaption style="font-weight: bold; font-size: 10px;">Tetris, 1984</figcaption></figure>
+                        <p>Nesse mesmo período, foi a vez da empresa <span style="font-weight: bold;">Nintendo</span> se consagrar nesse mercado. Ela era responsável por distribuir o videogame <span style="font-weight: bold;">Magnavox</span>
+                          e também era responsável pelo console <span style="font-weight: bold;">Famicom</span>. No ano de 1985, a Nintendo lança o <span style="font-weight: bold;">NES (Nintendo Entertainment System)</span> no mercado americano,
+                          que nada mais era o Famicom com novo nome.</p>
+                        <figure class="desktop"><img src="images/nes.jpg" alt="Nintendo Entertainment System" style="width: 305px; height: 165px;"><figcaption style="font-weight: bold; font-size: 12px;">NES, 1985</figcaption></figure>
+                        <figure class="tablet"><img src="images/nes.jpg" alt="Nintendo Entertainment System" style="width: 254px; height: 137px;"><figcaption style="font-weight: bold; font-size: 11px;">NES, 1985</figcaption></figure>
+                        <figure class="smartphone"><img src="images/nes.jpg" alt="Nintendo Entertainment System" style="width: 211px; height: 114px;"><figcaption style="font-weight: bold; font-size: 10px;">NES, 1985</figcaption></figure>
+                        <p>Após esses acontecimentos, a Nintendo sentiu uma necessidade de criar uma história em seus jogos e, para isso, era necessário ter um ótimo protagonista. Com isso, foi criado o personagem encanador Mario, em 1983, com
+                          as seguintes características: bigode, usando um chapéu, já que não era possível representar os cabelos, e tinha um nariz grande. Mario veio para salvar o videogame doméstico em 1985, com a criação do jogo
+                        <span style="font-weight: bold;">Super Mario Bros.</span>, que vinha junto ao videogame NES comercializado nos EUA.</p>
+                        <figure class="desktop"><img src="images/supermariobros.png" alt="Super Mario Bros." style="width: 260px; height: 356px;"><figcaption style="font-weight: bold; font-size: 12px;">Super Mario Bros., 1985</figcaption></figure>
+                        <figure class="tablet"><img src="images/supermariobros.png" alt="Super Mario Bros." style="width: 236px; height: 323px;"><figcaption style="font-weight: bold; font-size: 11px;">Super Mario Bros., 1985</figcaption></figure>
+                        <figure class="smartphone"><img src="images/supermariobros.png" alt="Super Mario Bros." style="width: 214px; height: 294px;"><figcaption style="font-weight: bold; font-size: 10px;">Super Mario Bros., 1985</figcaption></figure>
+                        <p>No ano de 1986, o <span style="font-weight: bold;">NES</span> ganhou o seu primeiro concorrente, chamado de <span style="font-weight: bold;">Sega Master System</span>, que foi criado para aproveitar a grande aceitação
+                          do mercado pós-crise.</p>
+                        <figure class="desktop"><img src="images/segamastersystem.png" alt="Sega Master System" style="width: 267px; height: 147px;"><figcaption style="font-weight: bold; font-size: 12px;">Sega Master System, 1986</figcaption></figure>
+                        <figure class="tablet"><img src="images/segamastersystem.png" alt="Sega Master System" style="width: 242px; height: 133px;"><figcaption style="font-weight: bold; font-size: 11px;">Sega Master System, 1986</figcaption></figure>
+                        <figure class="smartphone"><img src="images/segamastersystem.png" alt="Sega Master System" style="width: 220px; height: 121px;"><figcaption style="font-weight: bold; font-size: 10px;">Sega Master System, 1986</figcaption></figure>
+                        <p>Também, em 1986, foi criado um novo jogo pela Nintendo e ficou conhecido como <span style="font-weight: bold;">The Legend of Zelda</span>, com uma grande história do bem contra o mal e com seu protagonista sendo chamado
+                          de Link.</p>
+                        <figure class="desktop"><img src="images/thelegendofzelda.jpg" alt="The Legend of Zelda" style="width: 320px; height: 160px;"><figcaption style="font-weight: bold; font-size: 12px;">The Legend of Zelda, 1986</figcaption></figure>
+                        <figure class="tablet"><img src="images/thelegendofzelda.jpg" alt="The Legend of Zelda" style="width: 266px; height: 133px;"><figcaption style="font-weight: bold; font-size: 11px;">The Legend of Zelda, 1986</figcaption></figure>
+                        <figure class="smartphone"><img src="images/thelegendofzelda.jpg" alt="The Legend of Zelda" style="width: 222px; height: 111px;"><figcaption style="font-weight: bold; font-size: 10px;">The Legend of Zelda, 1986</figcaption></figure>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="evolucaogames">
+                        <header>
+                          <h2>A evolução dos jogos</h2>
+                        </header>
+                        
+                          <p>O final da década de 80 foi o começo de grandes inovações e também sucesso no mercado para o mundo dos games. Nessa época foi lançado o <span style="font-weight: bold;">TurboGrafx-16</span>, um console de 16-bit com tocador de CD. Foi a primeira vez
+                          em que jogos poderiam ser rodados do CD. Também ocorreu o lançamento do <span style="font-weight: bold;">Sega Genesis</span>, um console de 16-bit que vinha com o jogo <span style="font-weight: bold;">Altered Beast</span>.
+                        <figure class="desktop"><img src="images/turbografx16.jpg" alt="TurboGrafx-16" style="width: 279px; height: 180px;"><figcaption style="font-weight: bold; font-size: 12px;">TurboGrafx-16, 1987</figcaption></figure>
+                        <figure class="tablet"><img src="images/turbografx16.jpg" alt="TurboGrafx-16" style="width: 232px; height: 150px;"><figcaption style="font-weight: bold; font-size: 11px;">TurboGrafx-16, 1987</figcaption></figure>
+                        <figure class="smartphone"><img src="images/turbografx16.jpg" alt="TurboGrafx-16" style="width: 193px; height: 125px;"><figcaption style="font-weight: bold; font-size: 10px;">TurboGrafx-16, 1987</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/segagenesis.jpg" alt="Sega Genesis" style="width: 318px; height: 159px;"><figcaption style="font-weight: bold; font-size: 12px;">Sega Genesis, 1988</figcaption></figure>
+                        <figure class="tablet"><img src="images/segagenesis.jpg" alt="Sega Genesis" style="width: 265px; height: 132px;"><figcaption style="font-weight: bold; font-size: 11px;">Sega Genesis, 1988</figcaption></figure>
+                        <figure class="smartphone"><img src="images/segagenesis.jpg" alt="Sega Genesis" style="width: 220px; height: 110px;"><figcaption style="font-weight: bold; font-size: 10px;">Sega Genesis, 1988</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/alteredbeast.jpg" alt="Altered Beast" style="width: 348px; height: 244px;"><figcaption style="font-weight: bold; font-size: 12px;">Altered Beast, 1988</figcaption></figure>
+                        <figure class="tablet"><img src="images/alteredbeast.jpg" alt="Altered Beast" style="width: 290px; height: 203px;"><figcaption style="font-weight: bold; font-size: 11px;">Altered Beast, 1988</figcaption></figure>
+                        <figure class="smartphone"><img src="images/alteredbeast.jpg" alt="Altered Beast" style="width: 200px; height: 140px;"><figcaption style="font-weight: bold; font-size: 10px;">Altered Beast, 1988</figcaption></figure>
+                        <p>No ano de 1989, foi aumentado a qualidade do áudio para jogos no computador por causa das placas Sound Blaster, da empresa Creative Labs, superando as anteriores Ad Lib que eram o padrão.</p>
+                        <p>Os anos 90 marcaram os videogames como um período de grande inovação, da evolução dos pixels para os gráficos 3D graças ao maior poder dos processadores para computador e também as melhorias dos aspectos multimídia que foram possibilitados pelas
+                          placas de áudio e CD-ROM. Também, nesta época, que os gêneros conhecidos até hoje, FPS (First Person Shooter, que significa tiro em primeira pessoa), RTS (Real-time strategy, traduzido para estratégia em tempo real no Brasil), e o MMO (Massive Multiplayer Online)
+                          se popularizaram.</p>
+                        <p>Também foi nessa década que os consoles domésticos superaram os arcades. Já em 1990, a Nintendo começa lançando o jogo <span style="font-weight: bold;">Super Mario 3</span>, que foi o jogo de cartucho mais vendido de toda a história, e lança, também, o videogame
+                          <span style="font-weight: bold;">Super Famicom</span>, que tinha um sistema de 16-bit com gráficos 3D e áudio superior aos seus concorrentes <span style="font-weight: bold;">Genesis e TurboGrafx</span>.</p>
+                        <p>Nesse ano surgiu no mercado um novo console chamado de <span style="font-weight: bold;">NeoGeo</span>, que era um console de 24-bit e superava sua concorrência, porém seu preço elevado influenciou negativamente em suas vendas.</p>
+                        <p>Em 1991, é lançado a versão estadunidense do console <span style="font-weight: bold;">Super Famicom</span> que foi chamado de <span style="font-weight: bold;">Super NES (SNES)</span>. Nesse mesmo ano, foi lançado o jogo <span style="font-weight: bold;">Street Fighter 2</span>
+                          que foi um sucesso e "reviveu" os arcades.</p>
+                        <figure class="desktop"><img src="images/supernintendo.jpg" alt="SNES" style="width: 320px; height: 166px;"><figcaption style="font-weight: bold; font-size: 12px;">SNES, 1991</figcaption></figure>
+                        <figure class="tablet"><img src="images/supernintendo.jpg" alt="SNES" style="width: 266px; height: 138px;"><figcaption style="font-weight: bold; font-size: 11px;">SNES, 1991</figcaption></figure>
+                        <figure class="smartphone"><img src="images/supernintendo.jpg" alt="SNES" style="width: 222px; height: 115px;"><figcaption style="font-weight: bold; font-size: 10px;">SNES, 1991</figcaption></figure>
+                        <p>Já a Sega fez sua aposta em sucessos do arcade sendo lançados em versões caseiras como <span style="font-weight: bold;">Afterburner II, E-Swat</span> e outros títulos foram dos fliperamas para as televisões. No fim do ano, a Commodore anuncia o <span style="font-weight: bold;">CDTV</span>,
+                          que era um computador sem teclado. Foi o primeiro sistema que possuia softwares com funcão educacional além dos jogos e todos vinham em CDs.</p>
+                        <p>Com o objetivo de competir com o protagonista Mario, a Sega apresenta o porco-espinho mais famoso dos games que foi chamado de <span style="font-weight: bold;">Sonic</span>. Também foi nessa década que o debate sobre o nível de violência mostrado nos jogos, como o
+                          <span style="font-weight: bold;">Mortal Kombat</span>, chamaram a atenção dos congressistas estadunidenses. Com isso, foi criado um sistema chamado ERSB, que indica a idade recomendada e o nível de violência do jogo na sua capa.</p>
+                        <p>Em 1994, foi lançado, no Japão, um dos videogames de maior sucesso até hoje chamado de <span style="font-weight: bold;">Sony Playstation</span>. Antes, a Sony trabalhou com a Nintendo para lançar um videogame com CD e também com uma entrada para cartucho, porém nunca foi lançado.
+                          No mesmo ano, foi lançado o concorrente desse videogame que foi chamado de <span style="font-weight: bold;">Sega Saturn</span>. No ano de 1995, ambos chegaram aos EUA e o <span style="font-weight: bold;">Playstation</span>, com menor preço e maior quantidade de jogos, fez sucesso
+                          no mercado.</p>
+                        <figure class="desktop"><img src="images/segasaturn.jpg" alt="Sega Saturn" style="width: 302px; height: 167px;"><figcaption style="font-weight: bold; font-size: 12px;">Sega Saturn, 1994</figcaption></figure>
+                        <figure class="tablet"><img src="images/segasaturn.jpg" alt="Sega Saturn" style="width: 251px; height: 139px;"><figcaption style="font-weight: bold; font-size: 11px;">Sega Saturn, 1994</figcaption></figure>
+                        <figure class="smartphone"><img src="images/segasaturn.jpg" alt="Sega Saturn" style="width: 209px; height: 115px;"><figcaption style="font-weight: bold; font-size: 10px;">Sega Saturn, 1994</figcaption></figure>
+                        <p>Para competir com esses dois consoles, a Nintendo lançou em 1996, no Japão, o <span style="font-weight: bold;">N64 (Nintendo 64)</span>. Porém, ainda que no início vendeu bem, o console sofreu com uma carência de jogos, já que o tempo de desenvolvimento de um jogo e outro era até de meses.
+                          No ano seguinte, o console chega aos EUA.</p>
+                        <p>No natal de 1996, a Sony e a Nintendo vendem milhões de unidades dos seus consoles. Na disputa, o <span style="font-weight: bold;">Playstation</span> chegou a 20 milhões de unidades vendidas em abril de 1997 e a Nintendo lança uma nova versão do <span style="font-weight: bold;">SNES</span>,
+                          o <span style="font-weight: bold;">Super Nintendo 2.0</span>. Um jogo consegue a marca de 300 mil unidades vendidas, consolidando o sucesso do <span style="font-weight: bold;">N64</span>, no final de 1997, chamado de <span style="font-weight: bold;">StarFox</span> em apenas 5 dias.</p>
+                        <figure class="desktop"><img src="images/playstationen64.jpg" alt="Sony Playstation e N64" style="width: 350px; height: 113px;"><figcaption style="font-weight: bold; font-size: 12px;">Sony Playstation e N64</figcaption></figure>
+                        <figure class="tablet"><img src="images/playstationen64.jpg" alt="Sony Playstation e N64" style="width: 291px; height: 94px;"><figcaption style="font-weight: bold; font-size: 11px;">Sony Playstation e N64</figcaption></figure>
+                        <figure class="smartphone"><img src="images/playstationen64.jpg" alt="Sony Playstation e N64" style="width: 202px; height: 65px;"><figcaption style="font-weight: bold; font-size: 10px;">Sony Playstation e N64</figcaption></figure>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="modernizacaovideogames">
+                        <header>
+                          <h2>A modernização dos videogames</h2>
+                        </header>
+
+                        <p>Em 1998, foi lançado o tão esperado <span style="font-weight: bold;">The Legend of Zelda</span> para <span style="font-weight: bold;">N64</span>. Com o total de 325 mil reservas para esse jogo, tornou-se o mais esperado de toda a história. No total, foram vendidas 2,5 milhões de unidades
+                          que geraram o montante de US$ 150 milhões.</p>
+                        <p>A Sega, apesar do fim do <span style="font-weight: bold;">Sega Saturn</span> nos EUA e das suas crises gerenciais, anuncia um novo videogame chamado de <span style="font-weight: bold;">Sega Dreamcast</span>, que foi lançado em 1998 no Japão. No fim da década de 1990, a polêmica da emulação
+                          ganha destaque, e os sites que oferecem ROMs dos jogos sofriam a ameaça de serem fechados e até hoje não se tem uma definição sobre a legalidade dos emuladores.</p>
+                        <figure class="desktop"><img src="images/segadreamcast.jpg" alt="Sega Dreamcast" style="width: 323px; height: 156px;"><figcaption style="font-weight: bold; font-size: 12px;">Sega Dreamcast, 1998</figcaption></figure>
+                        <figure class="tablet"><img src="images/segadreamcast.jpg" alt="Sega Dreamcast" style="width: 269px; height: 130px;"><figcaption style="font-weight: bold; font-size: 11px;">Sega Dreamcast, 1998</figcaption></figure>
+                        <figure class="smartphone"><img src="images/segadreamcast.jpg" alt="Sega Dreamcast" style="width: 224px; height: 108px;"><figcaption style="font-weight: bold; font-size: 10px;">Sega Dreamcast, 1998</figcaption></figure>
+                        <p>A Microsoft entra no mercado de consoles em 1999, com o anúncio do <span style="font-weight: bold;">Xbox</span>. Assim como o console anunciado pela Sega, o videogame da Microsoft possuiria o sistema operacional Windows CE. A Sony aproveita o momento e, aos poucos, informa sobre novidades
+                          do seu novo console chamado de <span style="font-weight: bold;">Playstation 2</span>.</p>
+                        <p>O ano 2000 começa com o lançamento do <span style="font-weight: bold;">Playstation 2</span> no Japão. Em dois dias, foram vendidas 1 milhão de unidades desse console e nem todos que reservaram conseguiram adquirir um. Para competir com a Sony, a Microsoft anuncia que seu novo console teria
+                          um processador Pentium III de 733 MHz, placa de vídeo Nvidia e conexão com a internet. O console foi lançado no final de 2001 e alcançou, rapidamente, a marca de 1 milhão de unidades vendidas. Com o fim da fabricação do <span style="font-weight: bold;">Sony Playstation</span>, a Sony lança uma
+                          versão compacta, o <span style="font-weight: bold;">PSOne</span>, com um tamanho reduzido e com a possibilidade de usar uma tela de LCD pequena, possibilitando o fácil transporte dele.</p>
+                        <figure class="desktop"><img src="images/playstation2.jpg" alt="Playstation 2" style="width: 290px; height: 351px;"><figcaption style="font-weight: bold; font-size: 12px;">Playstation 2, 2000</figcaption></figure>
+                        <figure class="tablet"><img src="images/playstation2.jpg" alt="Playstation 2" style="width: 241px; height: 292px;"><figcaption style="font-weight: bold; font-size: 11px;">Playstation 2, 2000</figcaption></figure>
+                        <figure class="smartphone"><img src="images/playstation2.jpg" alt="Playstation 2" style="width: 201px; height: 243px;"><figcaption style="font-weight: bold; font-size: 10px;">Playstation 2, 2000</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/xbox.jpg" alt="Xbox" style="width: 332px; height: 152px;"><figcaption style="font-weight: bold; font-size: 12px;">Xbox, 2001</figcaption></figure>
+                        <figure class="tablet"><img src="images/xbox.jpg" alt="Xbox" style="width: 276px; height: 126px;"><figcaption style="font-weight: bold; font-size: 11px;">Xbox, 2001</figcaption></figure>
+                        <figure class="smartphone"><img src="images/xbox.jpg" alt="Xbox" style="width: 230px; height: 105px;"><figcaption style="font-weight: bold; font-size: 10px;">Xbox, 2001</figcaption></figure>
+                        <p>Em 2001, os jogos <span style="font-weight: bold;">Quake III Arena e Unreal Tournament</span> foram os primeiros jogos compatíveis com o modo online usando a internet banda larga. A Nintendo lança, em setembro de 2001, o <span style="font-weight: bold;">GameCube</span>.
+                        <figure class="desktop"><img src="images/gamecube.jpg" alt="Nintendo GameCube" style="width: 300px; height: 168px;"><figcaption style="font-weight: bold; font-size: 12px;">Nintendo GameCube, 2001</figcaption></figure>
+                        <figure class="tablet"><img src="images/gamecube.jpg" alt="Nintendo GameCube" style="width: 250px; height: 140px;"><figcaption style="font-weight: bold; font-size: 11px;">Nintendo GameCube, 2001</figcaption></figure>
+                        <figure class="smartphone"><img src="images/gamecube.jpg" alt="Nintendo GameCube" style="width: 208px; height: 116px;"><figcaption style="font-weight: bold; font-size: 10px;">Nintendo GameCube, 2001</figcaption></figure>
+                        <p>Em 2005 e 2006 foram lançados os dois videogames que definem o padrão de qualidade dos jogos até hoje: <span style="font-weight: bold;">Xbox 360 e Playstation 3</span>, respectivamente. Com os chamados gráficos em alta definição, discos rígidos de armazenamento e suporte a uma rede integrada para jogar online,
+                          chamada de Live, para o <span style="font-weight: bold;">Xbox 360</span>, e Playstation Network, para o <span style="font-weight: bold;">Playstation 3</span>, esses dois consoles representam ótimos sistemas que oferecem experiências surreais de jogo, batendo de frente com os computadores por um preço mais baixo.</p>
+                        <figure class="desktop"><img src="images/xbox360.jpg" alt="Xbox 360" style="width: 200px; height: 299px;"><figcaption style="font-weight: bold; font-size: 12px;">Xbox 360, 2005</figcaption></figure>
+                        <figure class="tablet"><img src="images/xbox360.jpg" alt="Xbox 360" style="width: 166px; height: 249px;"><figcaption style="font-weight: bold; font-size: 11px;">Xbox 360, 2005</figcaption></figure>
+                        <figure class="smartphone"><img src="images/xbox360.jpg" alt="Xbox 360" style="width: 138px; height: 207px;"><figcaption style="font-weight: bold; font-size: 10px;">Xbox 360, 2005</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/playstation3.jpg" alt="Playstation 3" style="width: 400px; height: 180px;"><figcaption style="font-weight: bold; font-size: 12px;">Playstation 3, 2006</figcaption></figure>
+                        <figure class="tablet"><img src="images/playstation3.jpg" alt="Playstation 3" style="width: 333px; height: 150px;"><figcaption style="font-weight: bold; font-size: 11px;">Playstation 3, 2006</figcaption></figure>
+                        <figure class="smartphone"><img src="images/playstation3.jpg" alt="Playstation 3" style="width: 191px; height: 86px;"><figcaption style="font-weight: bold; font-size: 10px;">Playstation 3, 2006</figcaption></figure>
+                        <p>A Nintendo investe em um tipo diferente de jogador com o <span style="font-weight: bold;">Wii</span>. Com especificações técnicas inferiores aos seus concorrentes, ele compensa em jogos divertidos para a família e novas experiências com seu controle com sensor de movimento. Mesmo sendo
+                          inferior tecnicamente, obtém sucesso absoluto em vendas.</p>
+                        <figure class="desktop"><img src="images/wii.png" alt="Nintendo Wii" style="width: 200px; height: 200px"><figcaption style="font-weight: bold; font-size: 12px;">Nintendo Wii, 2006</figcaption></figure>
+                        <figure class="tablet"><img src="images/wii.png" alt="Nintendo Wii" style="width: 166px; height: 166px"><figcaption style="font-weight: bold; font-size: 11px;">Nintendo Wii, 2006</figcaption></figure>
+                        <figure class="smartphone"><img src="images/wii.png" alt="Nintendo Wii" style="width: 138px; height: 138px"><figcaption style="font-weight: bold; font-size: 10px;">Nintendo Wii, 2006</figcaption></figure>
+                        <p>Uma marca que o novo milênio trouxe para os jogos foram os mods, sendo também um mod que se tornou um dos FPS mais jogados em todo o mundo e foi chamado de <span style="font-weight: bold;">Counter-Strike</span>, que se originou do jogo <span style="font-weight: bold;">Half-Life</span>.
+                          Também a relação entre jogos e filmes se tornou mais estreita, causando mudanças na narrativa. O estilo hollywoodiano chegou aos jogos, os enredos ficaram mais densos e próximos dos jogadores e até atores passaram a dublar os protagonistas dos jogos. Com isso, os jogos ganharam uma representação
+                          cinematográfica.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="geracaoatual">
+                        <header>
+                          <h2>A geração atual de videogames</h2>
+                        </header>
+                        
+                        <p>Em 2013, foram lançados dois consoles: <span style="font-weight: bold;">Playstation 4 e Xbox One</span>. Esses consoles marcam um início de grandes inovações tecnológicas, entre elas o uso constante de internet e também de mídias digitais que são baixadas através de suas respectivas lojas.
+                          Jogos se tornaram além de diversão e são até disputados por meio dos e-sports (Esportes Eletrônicos) atualmente, possuindo profissionais nos mais diversos jogos disponíveis e com campeonatos com alto número de pessoas assistindo, além de altas premiações para os vencedores. Dois desses jogos
+                          são o <span style="font-weight: bold;">Counter-Strike: Global Offensive</span> e o <span style="font-weight: bold;">League of Legends</span>. Enfim, jogos se tornaram extremamente famosos e raramente será visto alguém que nunca jogou algum, seja no celular, no computador ou nos videogames, e
+                          representam parte importante da economia atualmente com ações na bolsa de valores das diversas empresas desse ramo, como a Activision, Ubisoft, Rockstar Games e a Naughty Dog.</p>
+                        <figure class="desktop"><img src="images/xboxone.jpg" alt="Xbox One" style="width: 270px; height: 197px;"><figcaption style="font-weight: bold; font-size: 12px;">Xbox One, 2013</figcaption></figure>
+                        <figure class="tablet"><img src="images/xboxone.jpg" alt="Xbox One" style="width: 225px; height: 164px;"><figcaption style="font-weight: bold; font-size: 11px;">Xbox One, 2013</figcaption></figure>
+                        <figure class="smartphone"><img src="images/xboxone.jpg" alt="Xbox One" style="width: 187px; height: 136px;"><figcaption style="font-weight: bold; font-size: 10px;">Xbox One, 2013</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/playstation4.jpg" alt="Playstation 4" style="width: 270px; height: 197px;"><figcaption style="font-weight: bold; font-size: 12px;">Playstation 4, 2013</figcaption></figure>
+                        <figure class="tablet"><img src="images/playstation4.jpg" alt="Playstation 4" style="width: 225px; height: 164px;"><figcaption style="font-weight: bold; font-size: 11px;">Playstation 4, 2013</figcaption></figure>
+                        <figure class="smartphone"><img src="images/playstation4.jpg" alt="Playstation 4" style="width: 187px; height: 136px;"><figcaption style="font-weight: bold; font-size: 10px;">Playstation 4, 2013</figcaption></figure>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="ranking">
+                        <header>
+                          <h2>Ranking sobre videogames e jogos</h2>
+                        </header>
+                        
+                        <table>
+                            <tr>
+                                <th>Videogames mais vendidos da história</th>
+                                <th>Unidades vendidas</th>
+                            </tr>
+                            <tr>
+                                <td>Playstation 2</td>
+                                <td>155 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo DS</td>
+                                <td>154 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Game Boy</td>
+                                <td>118 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Playstation</td>
+                                <td>102,5 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Wii</td>
+                                <td>101,6 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Playstation 4</td>
+                                <td>100 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Playstation 3</td>
+                                <td>87 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Xbox 360</td>
+                                <td>84 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Game Boy Advance</td>
+                                <td>81,5 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Playstation Portable (PSP)</td>
+                                <td>76,4 milhões de unidades</td>
+                            </tr>
+                        </table> <br>
+
+                        <table>
+                            <tr>
+                                <th>Jogos mais vendidos da história</th>
+                                <th>Unidades vendidas</th>
+                            </tr>
+                            <tr>
+                                <td>Minecraft</td>
+                                <td>176 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Tetris</td>
+                                <td>170 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Grand Theft Auto V</td>
+                                <td>115 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Wii Sports</td>
+                                <td>82,88 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>PUBG</td>
+                                <td>60 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Super Mario Bros.</td>
+                                <td>40,24 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Counter-Strike: Global Offensive</td>
+                                <td>46,31 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Overwatch</td>
+                                <td>40 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Mario Kart Wii</td>
+                                <td>37,24 milhões de unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Tetris Game Boy</td>
+                                <td>35 milhões de unidades</td>
+                            </tr>
+                        </table> <br>
+
+                        <table>
+                            <tr>
+                                <th>Jogos mais caros de produzir de todos os tempos</th>
+                                <th>Custo aproximado</th>
+                            </tr>
+                            <tr>
+                                <td>Destiny 1</td>
+                                <td>US$ 500 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Grand Theft Auto V</td>
+                                <td>US$ 265 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Call of Duty: Modern Warfare 2</td>
+                                <td>US$ 250 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Star Wars: The Old Republic</td>
+                                <td>entre US$ 150 e 200 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy VII</td>
+                                <td>US$ 145 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Max Payne 3</td>
+                                <td>US$ 105 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Grand Theft Auto IV</td>
+                                <td>US$ 100 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Too Human</td>
+                                <td>US$ 100 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>APB: All Points Bulletin</td>
+                                <td>US$ 100 milhões</td>
+                            </tr>
+                            <tr>
+                                <td>Red Dead Redemption</td>
+                                <td>US$ 100 milhões</td>
+                            </tr>
+                        </table>
+                    </div>
+                  </article>
+
+                  <article>
+                    <div id="novageracao">
+                        <header>
+                          <h2>Nova geração dos videogames</h2>
+                        </header>
+
+                        <p>No ano de 2020 está acontecendo o lançamento da nova geração dos videogames, sendo eles o <span style="font-weight:bold;">Playstation 5</span> e o <span style="font-weight:bold;">Xbox Series X e Series S</span>. O grande diferencial dessa nova geração é a presença do tipo de armazenamento SSD (Solid State Drive),
+                          em que possibilita uma taxa de transferência de arquivos extremamente mais alta que a do convencional HDD (Hard Disk Drive), o que permite um tempo de carregamento dos jogos muito menor.</p>
+                        <figure class="desktop"><img src="images/playstation5.jpg" alt="Playstation 5" style="width: 300px; height: 200px;"><figcaption style="font-weight: bold; font-size: 12px;">Playstation 5, 2020</figcaption></figure>
+                        <figure class="tablet"><img src="images/playstation5.jpg" alt="Playstation 5" style="width: 250px; height: 166px;"><figcaption style="font-weight: bold; font-size: 11px;">Playstation 5, 2020</figcaption></figure>
+                        <figure class="smartphone"><img src="images/playstation5.jpg" alt="Playstation 5" style="width: 173px; height: 115px;"><figcaption style="font-weight: bold; font-size: 10px;">Playstation 5, 2020</figcaption></figure>
+
+                        <figure class="desktop"><img src="images/xboxseries.jpg" alt="Xbox Series S e Series X" style="width: 384px; height: 216px;"><figcaption style="font-weight: bold; font-size: 12px;">Xbox Series S e Series X, 2020</figcaption></figure>
+                        <figure class="tablet"><img src="images/xboxseries.jpg" alt="Xbox Series S e Series X" style="width: 320px; height: 180px;"><figcaption style="font-weight: bold; font-size: 11px;">Xbox Series S e Series X, 2020</figcaption></figure>
+                        <figure class="smartphone"><img src="images/xboxseries.jpg" alt="Xbox Series S e Series X" style="width: 221px; height: 125px;"><figcaption style="font-weight: bold; font-size: 10px;">Xbox Series S e Series X, 2020</figcaption></figure>
+                        <p>A diferença entre essas duas versões do <span style="font-weight:bold;">Xbox</span> basicamente se referem ao poder gráfico, com as duas possuindo suporte ao HDMI 2.1, taxas de quadros de até 120fps e o DirectX Ray Tracing, a versão <span style="font-weight:bold;">Series X</span> possui 12 teraflops e tem a capacidade de renderizar
+                          jogos na resolução 4K (3840x2160), já a versão mais barata que ele, a <span style="font-weight:bold;">Series S</span>, tem 4 teraflops de processamento e fica limitado a uma resolução de 1440p, além das diferentes capacidades dos seus SSD, com o <span style="font-weight:bold;">Series X</span> possuindo 1TB de armazenamento e o
+                          <span style="font-weight:bold;">Series S</span> possuindo 512GB.</p>
+                        <p>Já com o <span style="font-weight:bold;">Playstation 5</span>, traz um suporte ao 4K e também 8K, HDR e ray tracing, com até 120 qps (quadros por segundo). Esse novo console da Sony possui duas versões, que se diferem basicamente com uma possuindo leitor de Blu-Ray e outra não o tendo.</p>
+                    
+                    </div>
+                  
+                  </article>
+
+                  <p><a href="#iniciodapagina2" target="_self"><i class="material-icons" style="font-size:32px; position: relative; top: 10px;">keyboard_arrow_up</i> Topo da Página</a></p>
+
+                </section>
+
+              </main>
+            
+            </div>
+
+            <footer id="finaldapagina2">
+              <p style="background-color: rgb(0,0,0); font-family: Comic Sans MS, cursive, sans-serif;">"Uma lenda não é alguém que faz algo impossível,<br>
+                é louco o suficiente para tentar algo impossível e chegar ao topo."<br>(Ezio Auditore, personagem da franquia de jogos Assassin's Creed)</p>
+              <p><i class="material-icons" style="font-size:12px">copyright</i> 2021 História dos Videogames</p>                
+              <div>
+                <p class="hora" style="float: right;"></p>
+              </div>      
+            
+            </footer>
+
+      </body>
+
+</html>
